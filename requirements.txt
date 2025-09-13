@@ -102,6 +102,7 @@ PyMuPDF==1.25.5
 PyPika==0.48.9
 pyproject_hooks==1.2.0
 pyreadline3==3.5.4
+pysqlite3-binary
 python-dateutil==2.9.0.post0
 python-docx==1.1.2
 python-dotenv==1.1.0
