@@ -87,11 +87,15 @@ def initialize_logger():
     if logger.hasHandlers():
         return
 
+    """
     log_handler = TimedRotatingFileHandler(
         os.path.join(ct.LOG_DIR_PATH, ct.LOG_FILE),
         when="D",
         encoding="utf8"
     )
+    """
+    log_handler = logging.StreamHandler()
+
     formatter = logging.Formatter(
         f"[%(levelname)s] %(asctime)s line %(lineno)s, in %(funcName)s, session_id={st.session_state.session_id}: %(message)s"
     )
