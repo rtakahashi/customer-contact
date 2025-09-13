@@ -1,6 +1,9 @@
 """
 このファイルは、Webアプリのメイン処理が記述されたファイルです。
 """
+import sys, os, traceback, logging
+logging.basicConfig(level=logging.INFO)
+print("BOOT: reached top of script", flush=True)
 
 ############################################################
 # ライブラリの読み込み
